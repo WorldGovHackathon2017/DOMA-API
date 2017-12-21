@@ -9,9 +9,9 @@ class ApplicationController < ActionController::API
   #   User.try(:find_by, {id: token.first['sub']['id']})
   # end
 
-  # def logged_in?
-  #   !!current_user
-  # end
+  def logged_in?
+    !!current_user
+  end
 
   # def cors_set_access_control_headers
   #   headers['Access-Control-Allow-Origin'] = '*'
