@@ -1,4 +1,4 @@
-# DOMA 
+# DOMA-API
 
 ### DOMA [FrontEnd](https://github.com/WorldGovHackathon2017/DOMA-REACT-FrontEnd/)
 
