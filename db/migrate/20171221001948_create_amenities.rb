@@ -1,22 +1,24 @@
 class CreateAmenities < ActiveRecord::Migration[5.1]
   def change
     create_table :amenities do |t|
-      t.boolean :heat
-      t.boolean :air_conditioning
-      t.boolean :washer
-      t.boolean :dryer
-      t.integer :closets
-      t.integer :drawers
-      t.boolean :wifi
-      t.boolean :computer
-      t.boolean :phone
-      t.boolean :tv
-      t.integer :bikes
-      t.boolean :transportation
-      t.boolean :pets_allowed
-      t.boolean :baby_friendly
-      t.boolean :toddler_friendly
-      t.boolean :child_friendly
+      t.boolean :heat, default: false
+      t.boolean :air_conditioning, default: false
+      t.boolean :washer, default: false
+      t.boolean :dryer, default: false
+      t.integer :closets, default: 0
+      t.integer :drawers, default: 0
+      t.boolean :wifi, default: false
+      t.boolean :computer, default: false
+      t.boolean :phone, default: false
+      t.boolean :tv, default: false
+      t.integer :bikes, default: 0
+      t.boolean :transportation, default: false
+      t.boolean :pets_allowed, default: false
+      t.boolean :baby_friendly, default: false
+      t.boolean :toddler_friendly, default: false
+      t.boolean :child_friendly, default: false
+      t.boolean :teen_friendly, default: false
+      t.boolean :elderly_friendly, default: false
 
       t.timestamps
     end
