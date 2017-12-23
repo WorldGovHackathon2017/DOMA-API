@@ -17,6 +17,9 @@ class CreateListings < ActiveRecord::Migration[5.1]
       t.string :city
       t.string :state
       t.string :country
+      t.string :photo_1_url
+      t.string :photo_2_url
+      t.string :photo_3_url
 
       t.timestamps
     end
