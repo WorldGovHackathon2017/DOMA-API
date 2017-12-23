@@ -39,85 +39,109 @@ http://db.lewagon.com/
     <type label="SET" length="1" sql="SET" quote=""/>
     <type label="Bit" length="0" sql="bit" quote=""/>
   </group>
-</datatypes><table x="102" y="102" name="hosts">
+</datatypes><table x="33" y="102" name="hosts">
 <row name="id" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
 <row name="first_name" null="1" autoincrement="0">
-<datatype>INTEGER</datatype>
+<datatype>VARCHAR</datatype>
 <default>NULL</default></row>
 <row name="last_name" null="1" autoincrement="0">
-<datatype>INTEGER</datatype>
+<datatype>VARCHAR</datatype>
 <default>NULL</default></row>
 <row name="username" null="1" autoincrement="0">
-<datatype>INTEGER</datatype>
+<datatype>VARCHAR</datatype>
 <default>NULL</default></row>
 <row name="email" null="1" autoincrement="0">
-<datatype>INTEGER</datatype>
+<datatype>CHAR</datatype>
 <default>NULL</default></row>
 <row name="phone_number" null="1" autoincrement="0">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
 <row name="city" null="1" autoincrement="0">
-<datatype>INTEGER</datatype>
+<datatype>VARCHAR</datatype>
 <default>NULL</default></row>
 <row name="state" null="1" autoincrement="0">
-<datatype>INTEGER</datatype>
+<datatype>VARCHAR</datatype>
 <default>NULL</default></row>
 <row name="country" null="1" autoincrement="0">
-<datatype>INTEGER</datatype>
+<datatype>VARCHAR</datatype>
+<default>NULL</default></row>
+<row name="photo_url" null="1" autoincrement="0">
+<datatype>VARCHAR</datatype>
+<default>NULL</default></row>
+<row name="completed_registration" null="1" autoincrement="0">
+<datatype>SET</datatype>
+<default>NULL</default></row>
+<row name="created_at" null="1" autoincrement="0">
+<datatype>TIMESTAMP</datatype>
+<default>NULL</default></row>
+<row name="updated_at" null="1" autoincrement="0">
+<datatype>TIMESTAMP</datatype>
 <default>NULL</default></row>
 <key type="PRIMARY" name="">
 <part>id</part>
 </key>
 </table>
-<table x="843" y="100" name="refugees">
+<table x="892" y="102" name="refugees">
 <row name="id" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
 <row name="first_name" null="1" autoincrement="0">
-<datatype>INTEGER</datatype>
+<datatype>VARCHAR</datatype>
 <default>NULL</default></row>
 <row name="last_name" null="1" autoincrement="0">
-<datatype>INTEGER</datatype>
+<datatype>VARCHAR</datatype>
 <default>NULL</default></row>
 <row name="username" null="1" autoincrement="0">
-<datatype>INTEGER</datatype>
+<datatype>VARCHAR</datatype>
 <default>NULL</default></row>
 <row name="email" null="1" autoincrement="0">
-<datatype>INTEGER</datatype>
+<datatype>VARCHAR</datatype>
 <default>NULL</default></row>
 <row name="phone_number" null="1" autoincrement="0">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
 <row name="city" null="1" autoincrement="0">
-<datatype>INTEGER</datatype>
+<datatype>VARCHAR</datatype>
 <default>NULL</default></row>
 <row name="state" null="1" autoincrement="0">
-<datatype>INTEGER</datatype>
+<datatype>VARCHAR</datatype>
 <default>NULL</default></row>
 <row name="country" null="1" autoincrement="0">
-<datatype>INTEGER</datatype>
+<datatype>VARCHAR</datatype>
+<default>NULL</default></row>
+<row name="photo_url" null="1" autoincrement="0">
+<datatype>VARCHAR</datatype>
+<default>NULL</default></row>
+<row name="completed_registration" null="1" autoincrement="0">
+<datatype>SET</datatype>
+<default>NULL</default></row>
+<row name="created_at" null="1" autoincrement="0">
+<datatype>TIMESTAMP</datatype>
+<default>NULL</default></row>
+<row name="updated_at" null="1" autoincrement="0">
+<datatype>TIMESTAMP</datatype>
 <default>NULL</default></row>
 <key type="PRIMARY" name="">
 <part>id</part>
 </key>
 </table>
-<table x="473" y="101" name="amenities">
+<table x="487" y="101" name="amenities">
 <row name="id" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
 <row name="heat" null="1" autoincrement="0">
-<datatype>INTEGER</datatype>
+<datatype>SET</datatype>
 <default>NULL</default></row>
 <row name="air-conditioning" null="1" autoincrement="0">
-<datatype>INTEGER</datatype>
+<datatype>SET</datatype>
 <default>NULL</default></row>
 <row name="washer" null="1" autoincrement="0">
-<datatype>INTEGER</datatype>
+<datatype>SET</datatype>
 <default>NULL</default></row>
 <row name="dryer" null="1" autoincrement="0">
-<datatype>INTEGER</datatype>
+<datatype>SET</datatype>
 <default>NULL</default></row>
 <row name="closets" null="1" autoincrement="0">
 <datatype>INTEGER</datatype>
@@ -126,34 +150,46 @@ http://db.lewagon.com/
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
 <row name="wifi" null="1" autoincrement="0">
-<datatype>INTEGER</datatype>
+<datatype>SET</datatype>
 <default>NULL</default></row>
 <row name="computer" null="1" autoincrement="0">
-<datatype>INTEGER</datatype>
+<datatype>SET</datatype>
 <default>NULL</default></row>
 <row name="phone" null="1" autoincrement="0">
-<datatype>INTEGER</datatype>
+<datatype>SET</datatype>
 <default>NULL</default></row>
 <row name="tv" null="1" autoincrement="0">
-<datatype>INTEGER</datatype>
+<datatype>SET</datatype>
 <default>NULL</default></row>
-<row name="bike" null="1" autoincrement="0">
+<row name="bikes" null="1" autoincrement="0">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
 <row name="transportation" null="1" autoincrement="0">
-<datatype>INTEGER</datatype>
+<datatype>SET</datatype>
 <default>NULL</default></row>
-<row name="pets_allowed" null="1" autoincrement="0">
-<datatype>INTEGER</datatype>
+<row name="pet_friendly" null="1" autoincrement="0">
+<datatype>SET</datatype>
 <default>NULL</default></row>
-<row name="babies_allowed" null="1" autoincrement="0">
-<datatype>INTEGER</datatype>
+<row name="baby_friendly" null="1" autoincrement="0">
+<datatype>SET</datatype>
 <default>NULL</default></row>
-<row name="toddlers_allowed" null="1" autoincrement="0">
-<datatype>INTEGER</datatype>
+<row name="toddler_friendly" null="1" autoincrement="0">
+<datatype>SET</datatype>
 <default>NULL</default></row>
-<row name="children_allowed" null="1" autoincrement="0">
-<datatype>INTEGER</datatype>
+<row name="child_friendly" null="1" autoincrement="0">
+<datatype>SET</datatype>
+<default>NULL</default></row>
+<row name="teen_friendly" null="1" autoincrement="0">
+<datatype>SET</datatype>
+<default>NULL</default></row>
+<row name="elderly_friendly" null="1" autoincrement="0">
+<datatype>SET</datatype>
+<default>NULL</default></row>
+<row name="created_at" null="1" autoincrement="0">
+<datatype>TIMESTAMP</datatype>
+<default>NULL</default></row>
+<row name="updated_at" null="1" autoincrement="0">
+<datatype>TIMESTAMP</datatype>
 <default>NULL</default></row>
 <key type="PRIMARY" name="">
 <part>id</part>
@@ -171,6 +207,15 @@ http://db.lewagon.com/
 <datatype>INTEGER</datatype>
 <default>NULL</default><relation table="amenities" row="id" />
 </row>
+<row name="handicap_accessible" null="1" autoincrement="0">
+<datatype>SET</datatype>
+<default>NULL</default></row>
+<row name="require_medical_attention" null="1" autoincrement="0">
+<datatype>SET</datatype>
+<default>NULL</default></row>
+<row name="access_to_schools" null="1" autoincrement="0">
+<datatype>SET</datatype>
+<default>NULL</default></row>
 <row name="property_type" null="1" autoincrement="0">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
@@ -189,26 +234,41 @@ http://db.lewagon.com/
 <row name="number_of_bathrooms" null="1" autoincrement="0">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
-<row name="private_boolean" null="1" autoincrement="0">
-<datatype>INTEGER</datatype>
+<row name="private" null="1" autoincrement="0">
+<datatype>SET</datatype>
 <default>NULL</default></row>
 <row name="street_address" null="1" autoincrement="0">
-<datatype>INTEGER</datatype>
+<datatype>VARCHAR</datatype>
 <default>NULL</default></row>
 <row name="city" null="1" autoincrement="0">
-<datatype>INTEGER</datatype>
+<datatype>VARCHAR</datatype>
 <default>NULL</default></row>
 <row name="state" null="1" autoincrement="0">
-<datatype>INTEGER</datatype>
+<datatype>VARCHAR</datatype>
 <default>NULL</default></row>
 <row name="country" null="1" autoincrement="0">
-<datatype>INTEGER</datatype>
+<datatype>VARCHAR</datatype>
+<default>NULL</default></row>
+<row name="photo_1_url" null="1" autoincrement="0">
+<datatype>VARCHAR</datatype>
+<default>NULL</default></row>
+<row name="photo_2_url" null="1" autoincrement="0">
+<datatype>VARCHAR</datatype>
+<default>NULL</default></row>
+<row name="photo_3_url" null="1" autoincrement="0">
+<datatype>VARCHAR</datatype>
+<default>NULL</default></row>
+<row name="created_at" null="1" autoincrement="0">
+<datatype>TIMESTAMP</datatype>
+<default>NULL</default></row>
+<row name="updated_at" null="1" autoincrement="0">
+<datatype>TIMESTAMP</datatype>
 <default>NULL</default></row>
 <key type="PRIMARY" name="">
 <part>id</part>
 </key>
 </table>
-<table x="652" y="102" name="requests">
+<table x="658" y="102" name="requests">
 <row name="id" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
@@ -220,17 +280,32 @@ http://db.lewagon.com/
 <datatype>INTEGER</datatype>
 <default>NULL</default><relation table="amenities" row="id" />
 </row>
+<row name="handicap_accessible" null="1" autoincrement="0">
+<datatype>SET</datatype>
+<default>NULL</default></row>
+<row name="require_medical_attention" null="1" autoincrement="0">
+<datatype>SET</datatype>
+<default>NULL</default></row>
+<row name="access_to_schools" null="1" autoincrement="0">
+<datatype>SET</datatype>
+<default>NULL</default></row>
 <row name="number_of_guests" null="1" autoincrement="0">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
 <row name="city" null="1" autoincrement="0">
-<datatype>INTEGER</datatype>
+<datatype>VARCHAR</datatype>
 <default>NULL</default></row>
 <row name="state" null="1" autoincrement="0">
-<datatype>INTEGER</datatype>
+<datatype>VARCHAR</datatype>
 <default>NULL</default></row>
 <row name="country" null="1" autoincrement="0">
-<datatype>INTEGER</datatype>
+<datatype>VARCHAR</datatype>
+<default>NULL</default></row>
+<row name="created_at" null="1" autoincrement="0">
+<datatype>TIMESTAMP</datatype>
+<default>NULL</default></row>
+<row name="updated_at" null="1" autoincrement="0">
+<datatype>TIMESTAMP</datatype>
 <default>NULL</default></row>
 <key type="PRIMARY" name="">
 <part>id</part>

@@ -10,6 +10,7 @@ class CreateRequests < ActiveRecord::Migration[5.1]
       t.string :city
       t.string :state
       t.string :country
+      t.string :photo_url
 
       t.timestamps
     end
