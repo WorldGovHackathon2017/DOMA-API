@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 20171221002518) do
     t.boolean "tv", default: false
     t.integer "bikes", default: 0
     t.boolean "transportation", default: false
-    t.boolean "pets_allowed", default: false
+    t.boolean "pet_friendly", default: false
     t.boolean "baby_friendly", default: false
     t.boolean "toddler_friendly", default: false
     t.boolean "child_friendly", default: false
@@ -47,6 +47,7 @@ ActiveRecord::Schema.define(version: 20171221002518) do
     t.string "city"
     t.string "state"
     t.string "country"
+    t.string "photo_url"
     t.boolean "completed_registration", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -69,6 +70,9 @@ ActiveRecord::Schema.define(version: 20171221002518) do
     t.string "city"
     t.string "state"
     t.string "country"
+    t.string "photo_1_url"
+    t.string "photo_2_url"
+    t.string "photo_3_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["amenity_id"], name: "index_listings_on_amenity_id"
@@ -84,6 +88,7 @@ ActiveRecord::Schema.define(version: 20171221002518) do
     t.string "city"
     t.string "state"
     t.string "country"
+    t.string "photo_url"
     t.boolean "completed_registration", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -99,6 +104,7 @@ ActiveRecord::Schema.define(version: 20171221002518) do
     t.string "city"
     t.string "state"
     t.string "country"
+    t.string "photo_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["amenity_id"], name: "index_requests_on_amenity_id"
