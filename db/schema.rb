@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(version: 20171221002518) do
     t.integer "bikes", default: 0
     t.boolean "transportation", default: false
     t.boolean "pet_friendly", default: false
+    t.boolean "family_friendly", default: false
     t.boolean "baby_friendly", default: false
     t.boolean "toddler_friendly", default: false
     t.boolean "child_friendly", default: false
@@ -44,6 +45,7 @@ ActiveRecord::Schema.define(version: 20171221002518) do
     t.string "username"
     t.string "email"
     t.string "phone_number"
+    t.string "linkedin_url"
     t.string "city"
     t.string "state"
     t.string "country"
@@ -57,7 +59,7 @@ ActiveRecord::Schema.define(version: 20171221002518) do
     t.bigint "host_id"
     t.bigint "amenity_id"
     t.boolean "handicap_accessible", default: false
-    t.boolean "require_medical_attention", default: false
+    t.boolean "provide_medical_attention", default: false
     t.boolean "access_to_schools", default: false
     t.integer "property_type"
     t.integer "listing_type"
@@ -65,7 +67,8 @@ ActiveRecord::Schema.define(version: 20171221002518) do
     t.integer "number_of_bedrooms"
     t.integer "number_of_beds"
     t.integer "number_of_bathrooms"
-    t.integer "private", default: 0
+    t.boolean "private", default: false
+    t.string "phone_number"
     t.string "street_address"
     t.string "city"
     t.string "state"
@@ -73,6 +76,7 @@ ActiveRecord::Schema.define(version: 20171221002518) do
     t.string "photo_1_url"
     t.string "photo_2_url"
     t.string "photo_3_url"
+    t.boolean "completed_listing", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["amenity_id"], name: "index_listings_on_amenity_id"
@@ -85,9 +89,17 @@ ActiveRecord::Schema.define(version: 20171221002518) do
     t.string "username"
     t.string "email"
     t.string "phone_number"
-    t.string "city"
-    t.string "state"
-    t.string "country"
+    t.string "social_media_url"
+    t.string "home_city"
+    t.string "home_country"
+    t.string "organization_name"
+    t.string "organization_url"
+    t.string "organization_contact_name"
+    t.string "organization_contact_email"
+    t.string "organization_contact_phone"
+    t.string "current_city"
+    t.string "current_state"
+    t.string "current_country"
     t.string "photo_url"
     t.boolean "completed_registration", default: false
     t.datetime "created_at", null: false
@@ -100,11 +112,17 @@ ActiveRecord::Schema.define(version: 20171221002518) do
     t.boolean "handicap_accessible", default: false
     t.boolean "require_medical_attention", default: false
     t.boolean "access_to_schools", default: false
+    t.string "organization_name"
+    t.string "organization_url"
+    t.string "organization_contact_name"
+    t.string "organization_contact_email"
+    t.string "organization_contact_phone"
     t.integer "number_of_guests"
     t.string "city"
     t.string "state"
     t.string "country"
     t.string "photo_url"
+    t.boolean "completed_request", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["amenity_id"], name: "index_requests_on_amenity_id"

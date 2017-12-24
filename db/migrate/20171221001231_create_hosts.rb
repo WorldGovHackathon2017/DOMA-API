@@ -6,6 +6,7 @@ class CreateHosts < ActiveRecord::Migration[5.1]
       t.string :username
       t.string :email
       t.string :phone_number
+      t.string :linkedin_url
       t.string :city
       t.string :state
       t.string :country
