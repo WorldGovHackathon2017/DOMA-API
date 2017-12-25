@@ -4,7 +4,7 @@ class Refugee < ApplicationRecord
   
   def json_with_associations
     self.as_json(include: {
-      requests: {include: :amenities}
+      requests: {include: :amenity}
       })
   end
 end
