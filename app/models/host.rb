@@ -5,7 +5,7 @@ class Host < ApplicationRecord
 
   def json_with_associations
     self.as_json(include: {
-      listings: {include: :amenities}
+      listings: {include: :amenity}
       })
   end
 end
