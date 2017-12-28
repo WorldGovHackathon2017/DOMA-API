@@ -7,6 +7,8 @@ class CreateRefugees < ActiveRecord::Migration[5.1]
       t.string :email
       t.string :phone_number
       t.string :social_media_url
+      t.string :native_language
+      t.string :spoken_languages
       t.string :home_city
       t.string :home_country
       t.string :organization_name
