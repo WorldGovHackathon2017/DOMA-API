@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171221002518) do
+ActiveRecord::Schema.define(version: 20171228033020) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -46,6 +46,8 @@ ActiveRecord::Schema.define(version: 20171221002518) do
     t.string "email"
     t.string "phone_number"
     t.string "linkedin_url"
+    t.string "native_language"
+    t.string "spoken_languages"
     t.string "city"
     t.string "state"
     t.string "country"
@@ -83,6 +85,15 @@ ActiveRecord::Schema.define(version: 20171221002518) do
     t.index ["host_id"], name: "index_listings_on_host_id"
   end
 
+  create_table "listings_requests", force: :cascade do |t|
+    t.bigint "listing_id"
+    t.bigint "request_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["listing_id"], name: "index_listings_requests_on_listing_id"
+    t.index ["request_id"], name: "index_listings_requests_on_request_id"
+  end
+
   create_table "refugees", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
@@ -90,6 +101,8 @@ ActiveRecord::Schema.define(version: 20171221002518) do
     t.string "email"
     t.string "phone_number"
     t.string "social_media_url"
+    t.string "native_language"
+    t.string "spoken_languages"
     t.string "home_city"
     t.string "home_country"
     t.string "organization_name"
@@ -131,6 +144,8 @@ ActiveRecord::Schema.define(version: 20171221002518) do
 
   add_foreign_key "listings", "amenities"
   add_foreign_key "listings", "hosts"
+  add_foreign_key "listings_requests", "listings"
+  add_foreign_key "listings_requests", "requests"
   add_foreign_key "requests", "amenities"
   add_foreign_key "requests", "refugees"
 end

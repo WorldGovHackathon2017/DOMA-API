@@ -1,0 +1,2 @@
+class ListingsRequestsController < ApplicationController
+end
