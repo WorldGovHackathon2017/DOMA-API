@@ -2,7 +2,7 @@ class RefugeesController < ApplicationController
   # before_action :authorize
 
   def index
-    refugees = Refugee.includes(:listings, :amenities)
+    refugees = Refugee.includes(:requests, :amenities)
     render json: refugees.map(&:json_with_associations)
   end
 
